@@ -1,4 +1,21 @@
 <div class="container">
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Apro</th>
+            <th scope="col">Auto</th>
+            <th scope="col">Caudal</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let o of luc">
+            <td>{{o.usoAprovechamiento}}</td>
+            <td>{{o.numapr}}</td>
+            <td>{{o.caudal}}</td>
+          </tr>
+        </tbody>
+      </table>
+
   <ngx-charts-bar-vertical
     [view]="view"
     [results]="singleData"
